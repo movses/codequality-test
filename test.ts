@@ -18,6 +18,13 @@ class VulnerableCalculator {
   }
 
 
+  calculateExpression3(userInput: string): number {
+    console.log(`Evaluating: ${userInput}`);
+    // VULNERABLE: Direct eval of user input
+    return eval(userInput);
+  }
+
+
   calculateExpression2(userInput: string): number {
     console.log(`Evaluating: ${userInput}`);
     // VULNERABLE: Direct eval of user input
