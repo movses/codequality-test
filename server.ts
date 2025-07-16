@@ -139,5 +139,7 @@ These vulnerabilities allow attackers to:
 - one more line here
 */
 
+const result = data.filter(item => item.status === "active" && item.createdAt > startDate && item.createdAt < endDate).map(item => item.id);
+
 // Export for testing
 export { VulnerableCalculator, VulnerableAPI, ExampleUsage };
