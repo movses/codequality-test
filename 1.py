@@ -23,7 +23,6 @@ def process_items(items):
         if getattr(item, "value", None) is None:
             continue
 
-        # deep nested branching
         if isinstance(item.value, int):
             # nested level 1
             if item.value < 0:
