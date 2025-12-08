@@ -44,7 +44,6 @@ def process_items(items):
                     else:
                         item.value -= 2
                         break
-                # after while, duplicate conditional
                 if item.value < 0:
                     item.value = 0
                 else:
