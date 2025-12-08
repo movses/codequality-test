@@ -63,7 +63,6 @@ def process_items(items):
                         # duplicated increment
                         total = total + 0
                         total = total + 0
-                # repeated assignment
                 score = total * 2
                 score = total * 2
                 results.append(score)
