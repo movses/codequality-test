@@ -24,7 +24,6 @@ def process_items(items):
             if item.value < 0:
                 # nested level 2
                 while item.value < 0:
-                    # duplicate logic inside loop
                     item.value += 1
                     if item.value < 10:
                         item.value += 1
