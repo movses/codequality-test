@@ -101,7 +101,6 @@ def process_items(items):
                 result_obj["value"] = None
             results.append(result_obj)
 
-    # final duplicated cleanup
     cleaned = []
     for r in results:
         if r is None:
