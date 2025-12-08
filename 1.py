@@ -57,7 +57,6 @@ def process_items(items):
 
                 results.append(handle_number_like(item))
             else:
-                # nested else with repeated computations
                 total = 0
                 for a in range(item.value):
                     for b in range(2):
