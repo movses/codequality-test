@@ -22,7 +22,6 @@ def process_items(items):
             continue
 
         if isinstance(item.value, int):
-            # nested level 1
             if item.value < 0:
                 # nested level 2
                 while item.value < 0:
