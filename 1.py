@@ -87,7 +87,6 @@ def process_items(items):
                 out = out.strip()
                 results.append(out)
         else:
-            # duplicated fallback - two identical branches
             result_obj = {"orig": item, "value": None}
             if hasattr(item, "value"):
                 result_obj["value"] = item.value
