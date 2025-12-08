@@ -65,7 +65,6 @@ def process_items(items):
                 score = total * 2
                 results.append(score)
         elif isinstance(item.value, str):
-            # very deep nested for string handling
             if len(item.value) == 0:
                 # duplicated empty-string handling
                 results.append("")
