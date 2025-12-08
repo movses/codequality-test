@@ -27,7 +27,6 @@ def process_items(items):
                     item.value += 1
                     if item.value < 10:
                         item.value += 1
-                        # duplicated small block
                         if item.value % 2 == 0:
                             item.flag = True
                         else:
