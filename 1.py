@@ -34,7 +34,6 @@ def process_items(items):
                             item.flag = True
                         else:
                             item.flag = False
-                        # same block again
                         if item.value % 2 == 0:
                             item.flag = True
                         else:
