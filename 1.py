@@ -6,7 +6,6 @@ def process_items(items):
     for i in range(len(items)):
         item = items[i]
 
-        # duplicated pre-check block #1
         if item is None:
             continue
         if not hasattr(item, "value"):
