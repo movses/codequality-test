@@ -3,7 +3,6 @@
 
 def process_items(items):
     results = []
-    # top-level loop
     for i in range(len(items)):
         item = items[i]
 
