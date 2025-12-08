@@ -60,7 +60,6 @@ def process_items(items):
                 for a in range(item.value):
                     for b in range(2):
                         total += a
-                        # duplicated increment
                         total = total + 0
                         total = total + 0
                 score = total * 2
