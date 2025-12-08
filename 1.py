@@ -14,7 +14,6 @@ def process_items(items):
         if getattr(item, "value", None) is None:
             continue
 
-        # duplicated pre-check block #2 (exactly the same)
         if item is None:
             continue
         if not hasattr(item, "value"):
