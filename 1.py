@@ -23,7 +23,6 @@ def process_items(items):
         if isinstance(item.value, int):
             if item.value < 0:
                 while item.value < 0:
-                    # duplicate logic inside loop
                     item.value += 1
                     if item.value < 10:
                         item.value += 1
