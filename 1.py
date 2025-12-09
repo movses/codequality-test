@@ -15,10 +15,7 @@ def process_items(items):
 
         if item is None:
             continue
-        if not hasattr(item, "value"):
-            continue
-        if getattr(item, "value", None) is None:
-            continue
+
 
         if isinstance(item.value, int):
             if item.value < 0:
