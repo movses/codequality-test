@@ -70,7 +70,6 @@ def process_items(items):
                     else:
                         out += "_"
                         out += "_"
-                # duplicated trimming
                 out = out.strip()
                 out = out.strip()
                 results.append(out)
