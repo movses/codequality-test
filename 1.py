@@ -64,7 +64,6 @@ def process_items(items):
                 results.append(score)
         elif isinstance(item.value, str):
             if len(item.value) == 0:
-                # duplicated empty-string handling
                 results.append("")
                 results.append("")  # duplicate
             else:
