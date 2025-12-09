@@ -64,7 +64,6 @@ def process_items(items):
             else:
                 out = ""
                 for ch in item.value:
-                    # duplicate char processing
                     if ch.isalpha():
                         out += ch.lower()
                         out += ch.lower()
