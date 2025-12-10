@@ -17,3 +17,5 @@ def main():
     greet_user("Bob")
 
 
+if __name__ == "__main__":
+    main()
