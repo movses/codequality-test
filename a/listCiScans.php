@@ -43,16 +43,6 @@ class listCiScans implements \controllers\controllerInterface
 		foreach ($ci_scan_runs as $ci_scan_run) {
 			$filter_gate_status = $this->getGateStatus($ci_scan_run);
 
-			$formatted_ci_scan_run = [
-				'scan_id' => $ci_scan_run['scan_id'],
-				'gate_status' => $filter_gate_status,
-				'new_issues_count' => $ci_scan_run['new_issues_count'],
-				'solved_issues_count' => $ci_scan_run['solved_issues_count'],
-				'started_at' => $ci_scan_run['started_at'],
-				'related_commit_sha' => $ci_scan_run['related_commit_sha'],
-				'code_repo_id' => $ci_scan_run['scm_repo_id'],
-				'code_repo_name' => $ci_scan_run['scm_repo_name'],
-			];
 			$metadata = json_decode($ci_scan_run['metadata'], true);
 			$formatted_ci_scan_run['pull_request_title'] = $metadata['pull_request_metadata']['title'] ?? null;
 			$formatted_ci_scan_run['pull_request_url'] = $metadata['pull_request_metadata']['html_url'] ?? $metadata['pull_request_metadata']['url'] ?? null;
