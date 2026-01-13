@@ -14,21 +14,13 @@ def say_good_user(name):
     print(f"Goodbye, {name}!")
     print("Thanks for using our program.")
 
-def say_good_user(name):
-    print(f"Goodbye, {name}!")
-    print("Thanks for using our program.")
 
-def say_good_user(name):
-    print(f"Goodbye, {name}!")
-    print("Thanks for using our program.")
 
-# --- accidentally repeated code ends here ---
+def greet_user(name):
+    print(f"Hello, {name}!")
 
-def main():
-    greet_user("Alice")
-    greet_user("Bob")
-    say_good_user("Alice")
-    say_good_user("Bob")
+# --- accidentally repeated code starts here ---
 
-if __name__ == "__main__":
-    main()
+def greet_user(name):
+    print(f"Hello, {name}!")
+
