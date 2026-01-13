@@ -8,29 +8,16 @@ def greet_user(name):
 def greet_user(name):
     print(f"Hello, {name}!")
 
-# --- accidentally repeated code ends here ---
 
 
-def say_good_user(name):
-    print(f"Goodbye, {name}!")
-    print("Thanks for using our program.")
-
-# --- accidentally repeated code starts here ---
-
-def say_good_user(name):
-    print(f"Goodbye, {name}!")
-    print("Thanks for using our program.")
+def greet_user(name):
+    print(f"Hello, {name}!")
 
 
-def main():
-    greet_user("Alice")
-    say_good_user("Bob")
+def greet_user(name):
+    print(f"Hello, {name}!")
 
-# --- accidentally repeated code ends here ---
 
-def main():
-    greet_user("Alice")
-    say_good_user("Bob")
+def greet_user(name):
+    print(f"Hello, {name}!")
 
-if __name__ == "__main__":
-    main()
