@@ -1,4 +1,4 @@
-# rev=base
+# rev=end
 def f_1(): return 1
 def f_2(): return 2
 def f_3(): return 3
